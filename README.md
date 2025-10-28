@@ -12,6 +12,8 @@ When you open a Pull Request, benchmarks automatically run and results are deplo
 - A comment is posted to the PR with the preview link
 - Preview is automatically cleaned up after PR is merged or closed
 
+> **⚠️ First-time Setup Required**: GitHub Pages must be enabled before results will be visible. See [Setup Instructions](#github-pages-setup) below.
+
 ## Overview
 
 This framework provides:
@@ -111,6 +113,20 @@ cp target/release/rust-notify .
 ```
 
 The framework automatically detects which watchers are available. Native watchers are optional but recommended for large-scale testing.
+
+### GitHub Pages Setup
+
+To view benchmark results on GitHub Pages, you need to enable it once:
+
+1. Go to your repository **Settings** → **Pages**
+2. Under **Source**, select:
+   - **Branch**: `gh-pages`
+   - **Folder**: `/ (root)`
+3. Click **Save**
+
+> **Note**: The `gh-pages` branch will be created automatically by the first workflow run. After enabling Pages, wait for the workflow to complete, then results will be available at `https://YOUR_USERNAME.github.io/file-watcher-benchmark/`
+
+**For PR previews**: Once GitHub Pages is enabled, PR previews will automatically work at `https://YOUR_USERNAME.github.io/file-watcher-benchmark/pr-{number}/`
 
 ## Quick Start
 

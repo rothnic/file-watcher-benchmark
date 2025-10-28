@@ -86,7 +86,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs
         destination_dir: .
-        force_orphan: false
         
     - name: Deploy to GitHub Pages (PR Preview)
       if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
@@ -95,7 +94,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs
         destination_dir: pr-${{ github.event.number }}
-        force_orphan: false
         
     - name: Comment PR with preview link
       if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
@@ -112,6 +110,8 @@ jobs:
             Your benchmark results are ready for review!
             
             🔗 **[View Results](${previewUrl})**
+            
+            > **⚠️ First Time Setup**: If you see a 404, enable GitHub Pages in Settings → Pages → Source: \`gh-pages\` branch. Results will appear after the next workflow run.
             
             ### Quick Summary
             The benchmark ran the following tests:
