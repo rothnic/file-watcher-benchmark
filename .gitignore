@@ -34,7 +34,6 @@ temp/
 
 # Binary watchers
 watchers/go-fsnotify/go-fsnotify
-watchers/go-fsnotify/go.sum
 watchers/rust-notify/target/
 watchers/rust-notify/rust-notify
 watchers/rust-notify/Cargo.lock
