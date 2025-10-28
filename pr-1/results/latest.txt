@@ -5,10 +5,10 @@ FILE WATCHER BENCHMARK RESULTS
 Watcher: fs.watch
 Test Pattern: single-file-modify
 Scenario: small-repo
-Timestamp: 2025-10-28T17:09:49.386Z
+Timestamp: 2025-10-28T17:44:24.926Z
 
 PERFORMANCE METRICS:
-  Duration: 3113ms
+  Duration: 3112ms
   Events Detected: 2
   Events Missed: 0
   False Positives: 0
@@ -16,17 +16,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1012.00
-  Min: 1012.00
-  Max: 1012.00
-  P50: 1012.00
-  P95: 1012.00
-  P99: 1012.00
+  Average: 1011.00
+  Min: 1011.00
+  Max: 1011.00
+  P50: 1011.00
+  P95: 1011.00
+  P99: 1011.00
 
 MEMORY (bytes):
-  Average Heap: 4.46 MB
-  Peak Heap: 4.91 MB
-  Delta: 405.98 KB
+  Average Heap: 4.5 MB
+  Peak Heap: 4.97 MB
+  Delta: 398.42 KB
 
 CPU (microseconds):
   User: 0
@@ -38,28 +38,28 @@ CPU (microseconds):
 Watcher: fs.watch
 Test Pattern: burst-creates
 Scenario: medium-repo
-Timestamp: 2025-10-28T17:09:52.755Z
+Timestamp: 2025-10-28T17:44:28.259Z
 
 PERFORMANCE METRICS:
-  Duration: 3073ms
-  Events Detected: 93
+  Duration: 3071ms
+  Events Detected: 101
   Events Missed: 0
   False Positives: 0
   Accuracy: 100.00%
   Errors: 0
 
 LATENCY (ms):
-  Average: 1041.51
-  Min: 1012.00
-  Max: 1061.00
-  P50: 1031.00
-  P95: 1061.00
-  P99: 1061.00
+  Average: 1039.21
+  Min: 1011.00
+  Max: 1059.00
+  P50: 1027.00
+  P95: 1058.00
+  P99: 1059.00
 
 MEMORY (bytes):
-  Average Heap: 5.57 MB
-  Peak Heap: 7.53 MB
-  Delta: 2.65 MB
+  Average Heap: 5.85 MB
+  Peak Heap: 7.83 MB
+  Delta: 3.32 MB
 
 CPU (microseconds):
   User: 0
@@ -71,10 +71,10 @@ CPU (microseconds):
 Watcher: fs.watchFile
 Test Pattern: single-file-modify
 Scenario: small-repo
-Timestamp: 2025-10-28T17:09:55.911Z
+Timestamp: 2025-10-28T17:44:31.410Z
 
 PERFORMANCE METRICS:
-  Duration: 3105ms
+  Duration: 3106ms
   Events Detected: 1
   Events Missed: 0
   False Positives: 0
@@ -82,17 +82,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1105.00
-  Min: 1105.00
-  Max: 1105.00
-  P50: 1105.00
-  P95: 1105.00
-  P99: 1105.00
+  Average: 1004.00
+  Min: 1004.00
+  Max: 1004.00
+  P50: 1004.00
+  P95: 1004.00
+  P99: 1004.00
 
 MEMORY (bytes):
-  Average Heap: 8.98 MB
-  Peak Heap: 9.16 MB
-  Delta: 650.11 KB
+  Average Heap: 8.16 MB
+  Peak Heap: 9.95 MB
+  Delta: -2.45 MB
 
 CPU (microseconds):
   User: 0
@@ -104,10 +104,10 @@ CPU (microseconds):
 Watcher: fs.watchFile
 Test Pattern: burst-creates
 Scenario: medium-repo
-Timestamp: 2025-10-28T17:09:59.220Z
+Timestamp: 2025-10-28T17:44:34.685Z
 
 PERFORMANCE METRICS:
-  Duration: 3044ms
+  Duration: 3036ms
   Events Detected: 1
   Events Missed: 0
   False Positives: 0
@@ -115,17 +115,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1105.00
-  Min: 1105.00
-  Max: 1105.00
-  P50: 1105.00
-  P95: 1105.00
-  P99: 1105.00
+  Average: 1004.00
+  Min: 1004.00
+  Max: 1004.00
+  P50: 1004.00
+  P95: 1004.00
+  P99: 1004.00
 
 MEMORY (bytes):
-  Average Heap: 8.88 MB
-  Peak Heap: 9.81 MB
-  Delta: 204.27 KB
+  Average Heap: 8.45 MB
+  Peak Heap: 9.95 MB
+  Delta: -283.04 KB
 
 CPU (microseconds):
   User: 0
@@ -137,10 +137,10 @@ CPU (microseconds):
 Watcher: chokidar
 Test Pattern: single-file-modify
 Scenario: small-repo
-Timestamp: 2025-10-28T17:10:02.413Z
+Timestamp: 2025-10-28T17:44:37.863Z
 
 PERFORMANCE METRICS:
-  Duration: 3132ms
+  Duration: 3128ms
   Events Detected: 1
   Events Missed: 0
   False Positives: 0
@@ -148,17 +148,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1033.00
-  Min: 1033.00
-  Max: 1033.00
-  P50: 1033.00
-  P95: 1033.00
-  P99: 1033.00
+  Average: 1027.00
+  Min: 1027.00
+  Max: 1027.00
+  P50: 1027.00
+  P95: 1027.00
+  P99: 1027.00
 
 MEMORY (bytes):
-  Average Heap: 9.75 MB
-  Peak Heap: 13.23 MB
-  Delta: -4.18 MB
+  Average Heap: 9.86 MB
+  Peak Heap: 13.81 MB
+  Delta: -4.82 MB
 
 CPU (microseconds):
   User: 0
@@ -170,10 +170,10 @@ CPU (microseconds):
 Watcher: chokidar
 Test Pattern: burst-creates
 Scenario: medium-repo
-Timestamp: 2025-10-28T17:10:05.876Z
+Timestamp: 2025-10-28T17:44:41.241Z
 
 PERFORMANCE METRICS:
-  Duration: 3180ms
+  Duration: 3136ms
   Events Detected: 51
   Events Missed: 0
   False Positives: 0
@@ -181,17 +181,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1168.80
-  Min: 1033.00
-  Max: 1173.00
-  P50: 1172.00
-  P95: 1173.00
-  P99: 1173.00
+  Average: 1125.47
+  Min: 1027.00
+  Max: 1128.00
+  P50: 1127.00
+  P95: 1128.00
+  P99: 1128.00
 
 MEMORY (bytes):
-  Average Heap: 12.35 MB
-  Peak Heap: 17.88 MB
-  Delta: 4.65 MB
+  Average Heap: 11.42 MB
+  Peak Heap: 15.46 MB
+  Delta: 1.65 MB
 
 CPU (microseconds):
   User: 0
@@ -203,10 +203,10 @@ CPU (microseconds):
 Watcher: go-fsnotify
 Test Pattern: single-file-modify
 Scenario: small-repo
-Timestamp: 2025-10-28T17:10:09.231Z
+Timestamp: 2025-10-28T17:44:44.583Z
 
 PERFORMANCE METRICS:
-  Duration: 3206ms
+  Duration: 3205ms
   Events Detected: 2
   Events Missed: 0
   False Positives: 0
@@ -214,17 +214,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1106.00
-  Min: 1106.00
-  Max: 1106.00
-  P50: 1106.00
-  P95: 1106.00
-  P99: 1106.00
+  Average: 1105.00
+  Min: 1105.00
+  Max: 1105.00
+  P50: 1105.00
+  P95: 1105.00
+  P99: 1105.00
 
 MEMORY (bytes):
-  Average Heap: 15.31 MB
-  Peak Heap: 15.41 MB
-  Delta: 294.79 KB
+  Average Heap: 11.69 MB
+  Peak Heap: 11.79 MB
+  Delta: 284.21 KB
 
 CPU (microseconds):
   User: 0
@@ -236,10 +236,10 @@ CPU (microseconds):
 Watcher: go-fsnotify
 Test Pattern: burst-creates
 Scenario: medium-repo
-Timestamp: 2025-10-28T17:10:12.730Z
+Timestamp: 2025-10-28T17:44:48.025Z
 
 PERFORMANCE METRICS:
-  Duration: 3119ms
+  Duration: 3116ms
   Events Detected: 102
   Events Missed: 0
   False Positives: 0
@@ -247,17 +247,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1105.96
+  Average: 1105.33
   Min: 1105.00
-  Max: 1107.00
-  P50: 1106.00
-  P95: 1107.00
-  P99: 1107.00
+  Max: 1106.00
+  P50: 1105.00
+  P95: 1106.00
+  P99: 1106.00
 
 MEMORY (bytes):
-  Average Heap: 18.99 MB
-  Peak Heap: 22.93 MB
-  Delta: 7.8 MB
+  Average Heap: 12.56 MB
+  Peak Heap: 13.7 MB
+  Delta: 2.19 MB
 
 CPU (microseconds):
   User: 0
@@ -269,10 +269,10 @@ CPU (microseconds):
 Watcher: rust-notify
 Test Pattern: single-file-modify
 Scenario: small-repo
-Timestamp: 2025-10-28T17:10:16.080Z
+Timestamp: 2025-10-28T17:44:51.369Z
 
 PERFORMANCE METRICS:
-  Duration: 3204ms
+  Duration: 3206ms
   Events Detected: 3
   Events Missed: 0
   False Positives: 0
@@ -280,17 +280,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1104.00
-  Min: 1104.00
-  Max: 1104.00
-  P50: 1104.00
-  P95: 1104.00
-  P99: 1104.00
+  Average: 1105.00
+  Min: 1105.00
+  Max: 1105.00
+  P50: 1105.00
+  P95: 1105.00
+  P99: 1105.00
 
 MEMORY (bytes):
-  Average Heap: 18.22 MB
-  Peak Heap: 18.33 MB
-  Delta: 300.59 KB
+  Average Heap: 8.45 MB
+  Peak Heap: 8.55 MB
+  Delta: 279.04 KB
 
 CPU (microseconds):
   User: 0
@@ -302,7 +302,7 @@ CPU (microseconds):
 Watcher: rust-notify
 Test Pattern: burst-creates
 Scenario: medium-repo
-Timestamp: 2025-10-28T17:10:19.563Z
+Timestamp: 2025-10-28T17:44:54.824Z
 
 PERFORMANCE METRICS:
   Duration: 3117ms
@@ -313,17 +313,17 @@ PERFORMANCE METRICS:
   Errors: 0
 
 LATENCY (ms):
-  Average: 1105.11
-  Min: 1104.00
+  Average: 1105.26
+  Min: 1105.00
   Max: 1106.00
   P50: 1105.00
   P95: 1106.00
   P99: 1106.00
 
 MEMORY (bytes):
-  Average Heap: 12.18 MB
-  Peak Heap: 18.33 MB
-  Delta: -11.63 MB
+  Average Heap: 11.85 MB
+  Peak Heap: 15.53 MB
+  Delta: 7.25 MB
 
 CPU (microseconds):
   User: 0
@@ -420,19 +420,19 @@ Test Pattern: single-file-modify
 
 | Watcher | Avg Latency | P95 Latency | Events | Memory | Accuracy |
 |---------|-------------|-------------|--------|--------|----------|
-| fs.watch | 1012.00     | 1012.00     | 2      | 4.91 MB | 100.0   % |
-| chokidar | 1033.00     | 1033.00     | 1      | 13.23 MB | 100.0   % |
-| rust-notify | 1104.00     | 1104.00     | 3      | 18.33 MB | 100.0   % |
-| fs.watchFile | 1105.00     | 1105.00     | 1      | 9.16 MB | 100.0   % |
-| go-fsnotify | 1106.00     | 1106.00     | 2      | 15.41 MB | 100.0   % |
+| fs.watchFile | 1004.00     | 1004.00     | 1      | 9.95 MB | 100.0   % |
+| fs.watch | 1011.00     | 1011.00     | 2      | 4.97 MB | 100.0   % |
+| chokidar | 1027.00     | 1027.00     | 1      | 13.81 MB | 100.0   % |
+| go-fsnotify | 1105.00     | 1105.00     | 2      | 11.79 MB | 100.0   % |
+| rust-notify | 1105.00     | 1105.00     | 3      | 8.55 MB | 100.0   % |
 
 Test Pattern: burst-creates
 
 | Watcher | Avg Latency | P95 Latency | Events | Memory | Accuracy |
 |---------|-------------|-------------|--------|--------|----------|
-| fs.watch | 1041.51     | 1061.00     | 93     | 7.53 MB | 100.0   % |
-| fs.watchFile | 1105.00     | 1105.00     | 1      | 9.81 MB | 100.0   % |
-| rust-notify | 1105.11     | 1106.00     | 153    | 18.33 MB | 100.0   % |
-| go-fsnotify | 1105.96     | 1107.00     | 102    | 22.93 MB | 100.0   % |
-| chokidar | 1168.80     | 1173.00     | 51     | 17.88 MB | 100.0   % |
+| fs.watchFile | 1004.00     | 1004.00     | 1      | 9.95 MB | 100.0   % |
+| fs.watch | 1039.21     | 1058.00     | 101    | 7.83 MB | 100.0   % |
+| rust-notify | 1105.26     | 1106.00     | 153    | 15.53 MB | 100.0   % |
+| go-fsnotify | 1105.33     | 1106.00     | 102    | 13.7 MB | 100.0   % |
+| chokidar | 1125.47     | 1128.00     | 51     | 15.46 MB | 100.0   % |
 
