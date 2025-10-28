@@ -51,8 +51,12 @@ async function quickStart() {
 
   // Sort by latency
   const sorted = results
-    .filter(r => !r.error)
-    .sort((a, b) => a.metrics.latency.avg - b.metrics.latency.avg);
+    .filter(r => !r.error && r.metrics && r.metrics.latency)
+    .sort((a, b) => {
+      const aLatency = a.metrics?.latency?.avg || 0;
+      const bLatency = b.metrics?.latency?.avg || 0;
+      return aLatency - bLatency;
+    });
 
   console.log('Ranking by Average Latency (lower is better):\n');
   sorted.forEach((result, index) => {

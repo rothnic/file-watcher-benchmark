@@ -101,8 +101,6 @@ npm start -- --patterns single-file-modify
 
 ## Usage
 
-### Quick Start
-
 Run all benchmarks with all available watchers:
 
 ```bash

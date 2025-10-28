@@ -53,7 +53,7 @@ Feature requests are welcome! Please:
 
 ```bash
 # Clone the repository
-git clone https://github.com/rothnic/file-watcher-benchmark.git
+git clone https://github.com/YOUR_USERNAME/file-watcher-benchmark.git
 cd file-watcher-benchmark
 
 # Install dependencies
