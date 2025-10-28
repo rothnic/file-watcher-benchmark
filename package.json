@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "benchmark": "node index.js",
+    "quickstart": "node examples/quickstart.js",
     "list-watchers": "node index.js --list-watchers",
     "list-patterns": "node index.js --list-patterns"
   },

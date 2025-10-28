@@ -78,6 +78,27 @@ npm install chokidar
 # Add other watchers as needed
 ```
 
+## Quick Start
+
+Run a quick benchmark comparison:
+
+```bash
+node examples/quickstart.js
+```
+
+This will:
+1. Detect all available watchers on your system
+2. Run a simple file modification test
+3. Show a ranked comparison
+4. Suggest next steps
+
+For a quick test with all options:
+
+```bash
+# Run all watchers with a simple test
+npm start -- --patterns single-file-modify
+```
+
 ## Usage
 
 ### Quick Start
