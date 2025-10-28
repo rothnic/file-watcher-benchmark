@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Test data
+test-data/
+
+# Benchmark results
+benchmarks/*.txt
+benchmarks/*.csv
+benchmarks/*.json
+docs/results/*.json
+docs/results/*.txt
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Binary watchers
+watchers/go-fsnotify/go-fsnotify
+watchers/rust-notify/target/
+watchers/rust-notify/rust-notify
+watchers/rust-notify/Cargo.lock

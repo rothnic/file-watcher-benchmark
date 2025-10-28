@@ -1,0 +1,168 @@
+name: Benchmark File Watchers
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Setup Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+        
+    - name: Setup Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        override: true
+        
+    - name: Install Node dependencies
+      run: npm install
+      
+    - name: Build Go watcher
+      run: |
+        cd watchers/go-fsnotify
+        go mod download
+        go build -o go-fsnotify main.go
+        chmod +x go-fsnotify
+      
+    - name: Build Rust watcher
+      run: |
+        cd watchers/rust-notify
+        cargo build --release
+        cp target/release/rust-notify .
+        chmod +x rust-notify
+        
+    - name: Run benchmarks
+      run: |
+        # Run quick benchmarks for CI
+        node index.js --watchers all --patterns single-file-modify,burst-creates --format json --output docs/results/latest.json
+        
+        # Also save text format for logs
+        node index.js --watchers all --patterns single-file-modify,burst-creates --output docs/results/latest.txt
+        
+        # Generate timestamp
+        echo "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > docs/results/timestamp.txt
+        
+    - name: Generate results page
+      run: |
+        node scripts/generate-results-page.js
+        
+    - name: Upload benchmark results
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark-results
+        path: |
+          docs/results/
+          docs/index.html
+          docs/results.js
+          
+    - name: Deploy to GitHub Pages (Main Branch)
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        destination_dir: .
+        
+    - name: Deploy to GitHub Pages (PR Preview)
+      if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        destination_dir: pr-${{ github.event.number }}
+        
+    - name: Comment PR with preview link
+      if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+      uses: actions/github-script@v7
+      continue-on-error: true
+      with:
+        script: |
+          try {
+            const prNumber = context.issue.number;
+            const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-${prNumber}/`;
+            
+            const comment = `## 📊 Benchmark Results Preview
+            
+            Your benchmark results are ready for review!
+            
+            🔗 **[View Results](${previewUrl})**
+            
+            > **⚠️ First Time Setup**: If you see a 404, enable GitHub Pages in Settings → Pages → Source: \`gh-pages\` branch. Results will appear after the next workflow run.
+            
+            ### Quick Summary
+            The benchmark ran the following tests:
+            - \`single-file-modify\`: Tests single file modification detection
+            - \`burst-creates\`: Tests rapid file creation (50 files)
+            
+            **Watchers tested:**
+            - fs.watch (Node.js native)
+            - fs.watchFile (Node.js polling)
+            - chokidar (npm package)
+            - go-fsnotify (Go binary)
+            - rust-notify (Rust binary - if available)
+            
+            Results will be automatically cleaned up after this PR is merged.
+            
+            ---
+            <sub>Updated: ${new Date().toISOString()}</sub>`;
+            
+            // Check if we already commented
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+            
+            const botComment = comments.data.find(c => 
+              c.user.login === 'github-actions[bot]' && 
+              c.body.includes('Benchmark Results Preview')
+            );
+            
+            if (botComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: comment
+              });
+              console.log('Updated existing PR comment');
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: comment
+              });
+              console.log('Created new PR comment');
+            }
+          } catch (err) {
+            console.log('Failed to create/update preview comment:', err.message || err);
+            console.log('Preview is still available at the URL, just without the automated comment.');
+            // Don't throw - we don't want to fail the whole job if commenting fails
+          }

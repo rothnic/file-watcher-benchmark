@@ -1,0 +1,33 @@
+{
+  "name": "file-watcher-benchmark",
+  "version": "1.0.0",
+  "description": "Compares performance of file watching utilities",
+  "main": "index.js",
+  "bin": {
+    "file-watcher-benchmark": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "benchmark": "node index.js",
+    "quickstart": "node examples/quickstart.js",
+    "list-watchers": "node index.js --list-watchers",
+    "list-patterns": "node index.js --list-patterns"
+  },
+  "keywords": [
+    "file-watcher",
+    "benchmark",
+    "performance",
+    "fs.watch",
+    "chokidar",
+    "watchman",
+    "monitoring"
+  ],
+  "author": "",
+  "license": "ISC",
+  "optionalDependencies": {
+    "chokidar": "^3.6.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
