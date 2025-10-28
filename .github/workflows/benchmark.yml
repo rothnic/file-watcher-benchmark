@@ -1,0 +1,85 @@
+name: Benchmark File Watchers
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Setup Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+        
+    - name: Setup Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        override: true
+        
+    - name: Install Node dependencies
+      run: npm install
+      
+    - name: Build Go watcher
+      run: |
+        cd watchers/go-fsnotify
+        go mod init go-fsnotify || true
+        go get github.com/fsnotify/fsnotify
+        go build -o go-fsnotify main.go
+        chmod +x go-fsnotify
+      
+    - name: Build Rust watcher
+      run: |
+        cd watchers/rust-notify
+        cargo build --release
+        cp target/release/rust-notify .
+        chmod +x rust-notify
+        
+    - name: Run benchmarks
+      run: |
+        # Run quick benchmarks for CI
+        node index.js --watchers all --patterns single-file-modify,burst-creates --format json --output docs/results/latest.json
+        
+        # Also save text format for logs
+        node index.js --watchers all --patterns single-file-modify,burst-creates --output docs/results/latest.txt
+        
+        # Generate timestamp
+        echo "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > docs/results/timestamp.txt
+        
+    - name: Generate results page
+      run: |
+        node scripts/generate-results-page.js
+        
+    - name: Upload benchmark results
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark-results
+        path: |
+          docs/results/
+          
+    - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        force_orphan: true

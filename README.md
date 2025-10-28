@@ -2,6 +2,10 @@
 
 A comprehensive benchmarking framework for comparing performance of file watching utilities across different scenarios and workloads.
 
+## 📊 View Live Results
+
+**[View Latest Benchmark Results](https://rothnic.github.io/file-watcher-benchmark/)** - Interactive charts and comparisons updated automatically on every commit!
+
 ## Overview
 
 This framework provides:
@@ -9,6 +13,7 @@ This framework provides:
 - **Comprehensive metrics collection** including latency, CPU usage, memory consumption, and accuracy
 - **Extensible watcher registry** for easily adding new file watching implementations
 - **Multiple output formats** for analyzing and comparing results
+- **Automated CI benchmarks** with GitHub Pages visualization
 
 ## Features
 
@@ -48,35 +53,58 @@ Test patterns define what operations to perform:
 
 ### Supported Watchers
 
-Built-in watchers:
-- **fs.watch**: Native Node.js recursive file watching
-- **fs.watchFile**: Native Node.js polling-based watching
-- **chokidar**: Popular npm package for file watching
+Built-in watchers (Node.js):
+- ✅ **fs.watch**: Native Node.js recursive file watching
+- ✅ **fs.watchFile**: Native Node.js polling-based watching
+- ✅ **chokidar**: Popular npm package for file watching (100M+ downloads/month)
 
-Easy to add:
-- **watchman**: Facebook's file watching service
-- **turbowatch**: Modern file watcher
-- **Go-based watchers**: fsnotify and others
-- **Rust-based watchers**: notify and others
+Native binary watchers:
+- ✅ **go-fsnotify**: Go-based watcher using fsnotify (high performance, low memory)
+- ✅ **rust-notify**: Rust-based watcher using notify (best-in-class performance)
+
+See [WATCHERS.md](WATCHERS.md) for detailed comparison of features, performance characteristics, and use cases.
+
+Ready to add:
+- 📝 **watchman**: Facebook's file watching service
+- 📝 **turbowatch**: Modern file watcher built on watchman
 
 ## Installation
 
 ```bash
-git clone https://github.com/rothnic/file-watcher-benchmark.git
+git clone https://github.com/YOUR_USERNAME/file-watcher-benchmark.git
 cd file-watcher-benchmark
 npm install
 ```
 
 ### Optional Dependencies
 
-Install optional watchers:
+Install optional Node.js watchers:
 
 ```bash
-# Install chokidar
+# Install chokidar (recommended)
 npm install chokidar
-
-# Add other watchers as needed
 ```
+
+### Building Native Watchers (Optional)
+
+For best performance, build the Go and Rust watchers:
+
+**Go watcher (go-fsnotify)**:
+```bash
+# Requires Go 1.21+
+cd watchers/go-fsnotify
+go build -o go-fsnotify main.go
+```
+
+**Rust watcher (rust-notify)**:
+```bash
+# Requires Rust 1.70+
+cd watchers/rust-notify
+cargo build --release
+cp target/release/rust-notify .
+```
+
+The framework automatically detects which watchers are available. Native watchers are optional but recommended for large-scale testing.
 
 ## Quick Start
 

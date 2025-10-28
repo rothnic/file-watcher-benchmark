@@ -9,10 +9,14 @@ const { testPatterns } = require('./src/scenarios/definitions');
 const FSWatchWatcher = require('./src/watchers/fs-watch');
 const FSWatchFileWatcher = require('./src/watchers/fs-watchfile');
 const ChokidarWatcher = require('./src/watchers/chokidar');
+const GoFsnotifyWatcher = require('./src/watchers/go-fsnotify');
+const RustNotifyWatcher = require('./src/watchers/rust-notify');
 
 WatcherRegistry.register(FSWatchWatcher);
 WatcherRegistry.register(FSWatchFileWatcher);
 WatcherRegistry.register(ChokidarWatcher);
+WatcherRegistry.register(GoFsnotifyWatcher);
+WatcherRegistry.register(RustNotifyWatcher);
 
 /**
  * Main CLI function
