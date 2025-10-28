@@ -6,6 +6,12 @@ A comprehensive benchmarking framework for comparing performance of file watchin
 
 **[View Latest Benchmark Results](https://rothnic.github.io/file-watcher-benchmark/)** - Interactive charts and comparisons updated automatically on every commit!
 
+### PR Preview
+When you open a Pull Request, benchmarks automatically run and results are deployed to a preview URL:
+- `https://rothnic.github.io/file-watcher-benchmark/pr-{number}/`
+- A comment is posted to the PR with the preview link
+- Preview is automatically cleaned up after PR is merged or closed
+
 ## Overview
 
 This framework provides:
