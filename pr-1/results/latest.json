@@ -3,9 +3,9 @@
     "watcher": "fs.watch",
     "testPattern": "single-file-modify",
     "scenario": "small-repo",
-    "timestamp": "2025-10-28T18:38:11.274Z",
+    "timestamp": "2025-10-28T18:56:18.628Z",
     "metrics": {
-      "duration": 3113,
+      "duration": 3114,
       "events": {
         "total": 2,
         "detected": 2,
@@ -13,17 +13,17 @@
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1011,
-        "min": 1011,
-        "max": 1011,
-        "p50": 1011,
-        "p95": 1011,
-        "p99": 1011
+        "avg": 1013,
+        "min": 1013,
+        "max": 1013,
+        "p50": 1013,
+        "p95": 1013,
+        "p99": 1013
       },
       "memory": {
-        "avg": 4634374.4,
-        "peak": 5122304,
-        "delta": 355256
+        "avg": 4647449.6,
+        "peak": 4810816,
+        "delta": 512904
       },
       "cpu": {
         "user": 0,
@@ -36,8 +36,8 @@
     "operationLog": [
       {
         "type": "modify",
-        "details": "dir_0_0_nK6n/file_HefPUUvG.js",
-        "timestamp": 1761676689170
+        "details": "dir_2_0_CUt9/dir_2_1_HzJk/file_jwwPB0CV.json",
+        "timestamp": 1761677776526
       }
     ],
     "config": {
@@ -50,27 +50,27 @@
     "watcher": "fs.watch",
     "testPattern": "burst-creates",
     "scenario": "medium-repo",
-    "timestamp": "2025-10-28T18:38:14.645Z",
+    "timestamp": "2025-10-28T18:56:22.012Z",
     "metrics": {
-      "duration": 3075,
+      "duration": 3073,
       "events": {
-        "total": 93,
-        "detected": 93,
+        "total": 94,
+        "detected": 94,
         "missed": 0,
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1043.6344086021506,
-        "min": 1011,
-        "max": 1064,
+        "avg": 1042.6914893617022,
+        "min": 1013,
+        "max": 1062,
         "p50": 1033,
-        "p95": 1063,
-        "p99": 1064
+        "p95": 1061,
+        "p99": 1062
       },
       "memory": {
-        "avg": 6015430.4,
-        "peak": 8144688,
-        "delta": 3220200
+        "avg": 6108120.8,
+        "peak": 8288952,
+        "delta": 3365072
       },
       "cpu": {
         "user": 0,
@@ -83,253 +83,253 @@
     "operationLog": [
       {
         "type": "create",
-        "details": "bulk_1_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_1_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_3_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_2_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_2_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_3_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_5_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_0_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_4_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_4_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_7_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_6_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_8_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_7_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_9_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_9_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_11_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_10_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_10_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_8_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_12_1761676692595.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_13_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_13_1761676692595.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_11_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_6_1761676692594.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_14_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_14_1761676692595.txt",
-        "timestamp": 1761676692620
+        "details": "bulk_12_1761677779964.txt",
+        "timestamp": 1761677779988
       },
       {
         "type": "create",
-        "details": "bulk_15_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_15_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_16_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_17_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_17_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_16_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_18_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_18_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_19_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_19_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_20_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_20_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_21_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_21_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_22_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_24_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_23_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_23_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_24_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_22_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_25_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_26_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_26_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_25_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_27_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_27_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_31_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_31_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_32_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_32_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_33_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_33_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_34_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_34_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_35_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_35_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_36_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_36_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_37_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_37_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_38_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_38_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_40_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_39_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_39_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_40_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_41_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_41_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_42_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_42_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_44_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_28_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_43_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_43_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_45_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_44_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_46_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_45_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_47_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_46_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_48_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_47_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_49_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_48_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_0_1761676692594.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_49_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_28_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_5_1761677779964.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_30_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_30_1761677779965.txt",
+        "timestamp": 1761677779997
       },
       {
         "type": "create",
-        "details": "bulk_29_1761676692595.txt",
-        "timestamp": 1761676692629
+        "details": "bulk_29_1761677779965.txt",
+        "timestamp": 1761677779997
       }
     ],
     "config": {
@@ -343,7 +343,7 @@
     "watcher": "fs.watchFile",
     "testPattern": "single-file-modify",
     "scenario": "small-repo",
-    "timestamp": "2025-10-28T18:38:17.803Z",
+    "timestamp": "2025-10-28T18:56:25.170Z",
     "metrics": {
       "duration": 3107,
       "events": {
@@ -353,17 +353,17 @@
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1102,
-        "min": 1102,
-        "max": 1102,
-        "p50": 1102,
-        "p95": 1102,
-        "p99": 1102
+        "avg": 1103,
+        "min": 1103,
+        "max": 1103,
+        "p50": 1103,
+        "p95": 1103,
+        "p99": 1103
       },
       "memory": {
-        "avg": 10174449.6,
-        "peak": 10371880,
-        "delta": 704544
+        "avg": 10146523.2,
+        "peak": 10327288,
+        "delta": 639936
       },
       "cpu": {
         "user": 0,
@@ -376,8 +376,8 @@
     "operationLog": [
       {
         "type": "modify",
-        "details": "dir_1_0_EGOW/dir_1_1_O5On/dir_1_2_mi6o/file_ccUiBt93.json",
-        "timestamp": 1761676695702
+        "details": "dir_2_0_yOMi/file_Gv8gAXnv.js",
+        "timestamp": 1761677783068
       }
     ],
     "config": {
@@ -390,9 +390,9 @@
     "watcher": "fs.watchFile",
     "testPattern": "burst-creates",
     "scenario": "medium-repo",
-    "timestamp": "2025-10-28T18:38:21.111Z",
+    "timestamp": "2025-10-28T18:56:28.495Z",
     "metrics": {
-      "duration": 3044,
+      "duration": 3043,
       "events": {
         "total": 1,
         "detected": 1,
@@ -400,17 +400,17 @@
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1102,
-        "min": 1102,
-        "max": 1102,
-        "p50": 1102,
-        "p95": 1102,
-        "p99": 1102
+        "avg": 1103,
+        "min": 1103,
+        "max": 1103,
+        "p50": 1103,
+        "p95": 1103,
+        "p99": 1103
       },
       "memory": {
-        "avg": 9972331.2,
-        "peak": 11402304,
-        "delta": -595336
+        "avg": 9636276,
+        "peak": 10327288,
+        "delta": 73912
       },
       "cpu": {
         "user": 0,
@@ -423,253 +423,253 @@
     "operationLog": [
       {
         "type": "create",
-        "details": "bulk_0_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_0_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_1_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_2_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_2_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_3_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_5_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_4_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_4_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_1_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_3_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_5_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_6_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_6_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_7_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_9_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_8_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_8_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_10_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_7_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_9_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_10_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_13_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_12_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_11_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_11_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_14_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_13_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_15_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_14_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_12_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_16_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_16_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_18_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_19_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_17_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_18_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_20_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_17_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_21_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_20_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_22_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_21_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_23_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_22_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_24_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_24_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_25_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_25_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_26_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_23_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_28_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_27_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_27_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_26_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_29_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_28_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_30_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_29_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_31_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_30_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_32_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_31_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_33_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_32_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_34_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_33_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_35_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_34_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_37_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_36_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_36_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_35_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_39_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_37_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_38_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_39_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_41_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_38_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_40_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_40_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_42_1761677786475.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_41_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_43_1761677786476.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_42_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_44_1761677786476.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_43_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_46_1761677786476.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_44_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_45_1761677786476.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_45_1761676699091.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_47_1761677786476.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_47_1761676699092.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_48_1761677786476.txt",
+        "timestamp": 1761677786478
       },
       {
         "type": "create",
-        "details": "bulk_46_1761676699092.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_49_1761677786476.txt",
+        "timestamp": 1761677786479
       },
       {
         "type": "create",
-        "details": "bulk_48_1761676699092.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_19_1761677786475.txt",
+        "timestamp": 1761677786479
       },
       {
         "type": "create",
-        "details": "bulk_49_1761676699092.txt",
-        "timestamp": 1761676699095
+        "details": "bulk_15_1761677786475.txt",
+        "timestamp": 1761677786479
       }
     ],
     "config": {
@@ -683,9 +683,9 @@
     "watcher": "chokidar",
     "testPattern": "single-file-modify",
     "scenario": "small-repo",
-    "timestamp": "2025-10-28T18:38:24.304Z",
+    "timestamp": "2025-10-28T18:56:31.689Z",
     "metrics": {
-      "duration": 3132,
+      "duration": 3133,
       "events": {
         "total": 1,
         "detected": 1,
@@ -693,17 +693,17 @@
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1031,
-        "min": 1031,
-        "max": 1031,
-        "p50": 1031,
-        "p95": 1031,
-        "p99": 1031
+        "avg": 1033,
+        "min": 1033,
+        "max": 1033,
+        "p50": 1033,
+        "p95": 1033,
+        "p99": 1033
       },
       "memory": {
-        "avg": 14379606.4,
-        "peak": 15606976,
-        "delta": 5592368
+        "avg": 10639942.4,
+        "peak": 14604576,
+        "delta": -4821064
       },
       "cpu": {
         "user": 0,
@@ -716,8 +716,8 @@
     "operationLog": [
       {
         "type": "modify",
-        "details": "dir_3_0_C4Wz/dir_3_1_QZO7/file_O9OJ0u2d.txt",
-        "timestamp": 1761676702203
+        "details": "dir_0_0_vZ9S/dir_0_1_kyuB/file_TL82f9kx.txt",
+        "timestamp": 1761677789588
       }
     ],
     "config": {
@@ -730,9 +730,9 @@
     "watcher": "chokidar",
     "testPattern": "burst-creates",
     "scenario": "medium-repo",
-    "timestamp": "2025-10-28T18:38:27.742Z",
+    "timestamp": "2025-10-28T18:56:35.102Z",
     "metrics": {
-      "duration": 3176,
+      "duration": 3155,
       "events": {
         "total": 51,
         "detected": 51,
@@ -740,17 +740,17 @@
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1163.0588235294117,
-        "min": 1031,
-        "max": 1166,
-        "p50": 1166,
-        "p95": 1166,
-        "p99": 1166
+        "avg": 1144.3921568627452,
+        "min": 1033,
+        "max": 1148,
+        "p50": 1147,
+        "p95": 1147,
+        "p99": 1148
       },
       "memory": {
-        "avg": 13665864,
-        "peak": 15606976,
-        "delta": 3451904
+        "avg": 12145984.8,
+        "peak": 16157232,
+        "delta": 1552656
       },
       "cpu": {
         "user": 0,
@@ -763,253 +763,253 @@
     "operationLog": [
       {
         "type": "create",
-        "details": "bulk_0_1761676705713.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_1_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_3_1761676705713.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_4_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_2_1761676705713.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_2_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_5_1761676705713.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_3_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_4_1761676705713.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_5_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_1_1761676705713.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_6_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_6_1761676705713.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_7_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_7_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_8_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_9_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_10_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_10_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_9_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_8_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_11_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_11_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_12_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_13_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_14_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_14_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_13_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_12_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_15_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_18_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_17_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_17_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_16_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_19_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_18_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_20_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_19_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_21_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_20_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_22_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_21_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_23_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_23_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_24_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_22_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_25_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_24_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_15_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_25_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_26_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_26_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_27_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_27_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_28_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_28_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_29_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_29_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_32_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_30_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_31_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_32_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_30_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_31_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_35_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_33_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_33_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_34_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_34_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_37_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_37_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_36_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_36_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_38_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_38_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_40_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_40_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_35_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_41_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_39_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_39_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_41_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_42_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_42_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_44_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_43_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_43_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_44_1761677793079.txt",
+        "timestamp": 1761677793084
       },
       {
         "type": "create",
-        "details": "bulk_45_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_46_1761677793080.txt",
+        "timestamp": 1761677793086
       },
       {
         "type": "create",
-        "details": "bulk_46_1761676705714.txt",
-        "timestamp": 1761676705719
+        "details": "bulk_47_1761677793080.txt",
+        "timestamp": 1761677793086
       },
       {
         "type": "create",
-        "details": "bulk_48_1761676705714.txt",
-        "timestamp": 1761676705725
+        "details": "bulk_45_1761677793079.txt",
+        "timestamp": 1761677793086
       },
       {
         "type": "create",
-        "details": "bulk_47_1761676705714.txt",
-        "timestamp": 1761676705725
+        "details": "bulk_48_1761677793080.txt",
+        "timestamp": 1761677793086
       },
       {
         "type": "create",
-        "details": "bulk_49_1761676705714.txt",
-        "timestamp": 1761676705725
+        "details": "bulk_49_1761677793080.txt",
+        "timestamp": 1761677793086
       },
       {
         "type": "create",
-        "details": "bulk_16_1761676705714.txt",
-        "timestamp": 1761676705725
+        "details": "bulk_0_1761677793078.txt",
+        "timestamp": 1761677793086
       }
     ],
     "config": {
@@ -1023,9 +1023,9 @@
     "watcher": "go-fsnotify",
     "testPattern": "single-file-modify",
     "scenario": "small-repo",
-    "timestamp": "2025-10-28T18:38:31.093Z",
+    "timestamp": "2025-10-28T18:56:38.457Z",
     "metrics": {
-      "duration": 3209,
+      "duration": 3206,
       "events": {
         "total": 2,
         "detected": 2,
@@ -1033,17 +1033,17 @@
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1108,
-        "min": 1108,
-        "max": 1108,
-        "p50": 1108,
-        "p95": 1108,
-        "p99": 1108
+        "avg": 1105,
+        "min": 1105,
+        "max": 1105,
+        "p50": 1105,
+        "p95": 1105,
+        "p99": 1105
       },
       "memory": {
-        "avg": 15777900.8,
-        "peak": 22983944,
-        "delta": -11893288
+        "avg": 12453376,
+        "peak": 12575768,
+        "delta": 346248
       },
       "cpu": {
         "user": 0,
@@ -1056,8 +1056,8 @@
     "operationLog": [
       {
         "type": "modify",
-        "details": "dir_9_0_Ka9f/dir_9_1_uvrb/file_r1RmeXrN.json",
-        "timestamp": 1761676708892
+        "details": "file_1mZG08mW.md",
+        "timestamp": 1761677796255
       }
     ],
     "config": {
@@ -1070,9 +1070,9 @@
     "watcher": "go-fsnotify",
     "testPattern": "burst-creates",
     "scenario": "medium-repo",
-    "timestamp": "2025-10-28T18:38:34.566Z",
+    "timestamp": "2025-10-28T18:56:41.934Z",
     "metrics": {
-      "duration": 3118,
+      "duration": 3116,
       "events": {
         "total": 102,
         "detected": 102,
@@ -1080,17 +1080,17 @@
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1105.5392156862745,
-        "min": 1105,
-        "max": 1108,
+        "avg": 1105.3725490196077,
+        "min": 1104,
+        "max": 1106,
         "p50": 1105,
         "p95": 1106,
-        "p99": 1108
+        "p99": 1106
       },
       "memory": {
-        "avg": 17025163.2,
-        "peak": 22983944,
-        "delta": -4359576
+        "avg": 13263205.6,
+        "peak": 14342096,
+        "delta": 2112576
       },
       "cpu": {
         "user": 0,
@@ -1103,253 +1103,253 @@
     "operationLog": [
       {
         "type": "create",
-        "details": "bulk_0_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_1_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_2_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_2_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_3_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_3_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_4_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_5_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_5_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_4_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_7_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_6_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_1_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_7_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_8_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_9_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_10_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_8_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_9_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_10_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_11_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_11_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_12_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_12_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_13_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_13_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_15_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_14_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_16_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_15_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_14_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_16_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_17_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_19_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_18_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_18_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_19_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_17_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_21_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_21_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_20_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_20_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_22_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_22_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_24_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_23_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_23_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_24_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_25_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_25_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_27_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_27_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_26_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_26_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_28_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_28_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_30_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_29_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_29_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_31_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_31_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_30_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_32_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_32_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_33_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_34_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_34_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_33_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_36_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_35_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_35_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_36_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_37_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_39_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_38_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_37_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_39_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_38_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_40_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_41_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_43_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_40_1761677799820.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_42_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_42_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_41_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_43_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_44_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_44_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_45_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_46_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_46_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_48_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_48_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_45_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_47_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_47_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_49_1761676712451.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_49_1761677799821.txt",
+        "timestamp": 1761677799823
       },
       {
         "type": "create",
-        "details": "bulk_6_1761676712450.txt",
-        "timestamp": 1761676712454
+        "details": "bulk_0_1761677799820.txt",
+        "timestamp": 1761677799823
       }
     ],
     "config": {
@@ -1363,7 +1363,7 @@
     "watcher": "rust-notify",
     "testPattern": "single-file-modify",
     "scenario": "small-repo",
-    "timestamp": "2025-10-28T18:38:37.913Z",
+    "timestamp": "2025-10-28T18:56:45.285Z",
     "metrics": {
       "duration": 3206,
       "events": {
@@ -1381,9 +1381,9 @@
         "p99": 1105
       },
       "memory": {
-        "avg": 13473078.4,
-        "peak": 13576992,
-        "delta": 295360
+        "avg": 9218059.2,
+        "peak": 9333600,
+        "delta": 320744
       },
       "cpu": {
         "user": 0,
@@ -1396,8 +1396,8 @@
     "operationLog": [
       {
         "type": "modify",
-        "details": "file_53BXrYaX.js",
-        "timestamp": 1761676715712
+        "details": "dir_3_0_ZwVL/dir_3_1_VgvB/file_9Y8X5jCk.json",
+        "timestamp": 1761677803082
       }
     ],
     "config": {
@@ -1410,7 +1410,7 @@
     "watcher": "rust-notify",
     "testPattern": "burst-creates",
     "scenario": "medium-repo",
-    "timestamp": "2025-10-28T18:38:41.394Z",
+    "timestamp": "2025-10-28T18:56:48.747Z",
     "metrics": {
       "duration": 3118,
       "events": {
@@ -1420,17 +1420,17 @@
         "falsePositives": 0
       },
       "latency": {
-        "avg": 1106.3921568627452,
+        "avg": 1107.0261437908496,
         "min": 1105,
-        "max": 1107,
-        "p50": 1106,
-        "p95": 1107,
-        "p99": 1107
+        "max": 1108,
+        "p50": 1107,
+        "p95": 1108,
+        "p99": 1108
       },
       "memory": {
-        "avg": 14155368,
-        "peak": 15131392,
-        "delta": 1849760
+        "avg": 12834836.8,
+        "peak": 16740424,
+        "delta": 7727568
       },
       "cpu": {
         "user": 0,
@@ -1443,253 +1443,253 @@
     "operationLog": [
       {
         "type": "create",
-        "details": "bulk_1_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_2_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_2_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_4_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_4_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_5_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_0_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_3_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_5_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_0_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_3_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_6_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_6_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_8_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_7_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_7_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_8_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_11_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_9_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_10_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_10_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_9_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_11_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_12_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_12_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_14_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_13_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_13_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_15_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_15_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_14_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_16_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_16_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_17_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_17_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_18_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_18_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_19_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_20_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_20_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_22_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_21_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_21_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_22_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_23_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_23_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_19_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_24_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_24_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_26_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_25_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_27_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_26_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_28_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_27_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_29_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_28_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_25_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_29_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_31_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_30_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_33_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_31_1761676719280.txt",
-        "timestamp": 1761676719283
+        "details": "bulk_34_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_32_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_32_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_33_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_35_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_34_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_36_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_36_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_37_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_35_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_38_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_37_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_39_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_39_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_41_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_38_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_42_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_41_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_43_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_40_1761676719280.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_44_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_42_1761676719281.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_45_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_43_1761676719281.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_48_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_44_1761676719281.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_47_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_45_1761676719281.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_46_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_46_1761676719281.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_49_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_47_1761676719281.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_30_1761677806633.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_48_1761676719281.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_1_1761677806632.txt",
+        "timestamp": 1761677806636
       },
       {
         "type": "create",
-        "details": "bulk_49_1761676719281.txt",
-        "timestamp": 1761676719284
+        "details": "bulk_40_1761677806633.txt",
+        "timestamp": 1761677806636
       }
     ],
     "config": {
