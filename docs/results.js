@@ -2,22 +2,50 @@
 async function loadResults() {
     try {
         const response = await fetch('results/latest.json');
+        
+        // Check if the file exists
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
         const results = await response.json();
+        
+        // Check if results is empty or not an array
+        if (!Array.isArray(results) || results.length === 0) {
+            showNoResults();
+            return;
+        }
         
         // Load timestamp
         const timestampResponse = await fetch('results/timestamp.txt');
-        const timestamp = await timestampResponse.text();
-        document.getElementById('timestamp').textContent = `Last updated: ${new Date(timestamp.trim()).toLocaleString()}`;
+        if (timestampResponse.ok) {
+            const timestamp = await timestampResponse.text();
+            document.getElementById('timestamp').textContent = `Last updated: ${new Date(timestamp.trim()).toLocaleString()}`;
+        } else {
+            document.getElementById('timestamp').textContent = 'Waiting for first benchmark run...';
+        }
         
         displayResults(results);
     } catch (error) {
         console.error('Error loading results:', error);
-        document.getElementById('content').innerHTML = `
-            <div class="error">
-                Failed to load benchmark results. Please try again later.
-            </div>
-        `;
+        showNoResults();
     }
+}
+
+function showNoResults() {
+    document.getElementById('content').innerHTML = `
+        <div class="info-box">
+            <h2 style="color: #667eea;">⏳ No Benchmark Results Yet</h2>
+            <p>Benchmarks haven't run yet. Results will appear here after:</p>
+            <ul style="margin: 1rem 0; padding-left: 2rem;">
+                <li>The first commit to the main branch, or</li>
+                <li>A PR is opened (for PR previews)</li>
+            </ul>
+            <p>The GitHub Actions workflow will automatically run benchmarks and update this page.</p>
+            <p style="margin-top: 1rem;"><strong>Note:</strong> This is a PR preview. Results will be generated when the workflow completes.</p>
+        </div>
+    `;
+    document.getElementById('timestamp').textContent = 'Waiting for first benchmark run...';
 }
 
 function displayResults(results) {
