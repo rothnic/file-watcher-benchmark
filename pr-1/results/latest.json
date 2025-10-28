@@ -1,0 +1,1702 @@
+[
+  {
+    "watcher": "fs.watch",
+    "testPattern": "single-file-modify",
+    "scenario": "small-repo",
+    "timestamp": "2025-10-28T16:50:15.123Z",
+    "metrics": {
+      "duration": 3113,
+      "events": {
+        "total": 2,
+        "detected": 2,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1011,
+        "min": 1011,
+        "max": 1011,
+        "p50": 1011,
+        "p95": 1011,
+        "p99": 1011
+      },
+      "memory": {
+        "avg": 4816416,
+        "peak": 5035120,
+        "delta": -319736
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "modify",
+        "details": "dir_2_0_31XJ/dir_2_1_wcij/dir_2_2_UotD/file_V09M1QBo.js",
+        "timestamp": 1761670213020
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 100,
+      "verificationTime": 2000
+    }
+  },
+  {
+    "watcher": "fs.watch",
+    "testPattern": "burst-creates",
+    "scenario": "medium-repo",
+    "timestamp": "2025-10-28T16:50:18.425Z",
+    "metrics": {
+      "duration": 3062,
+      "events": {
+        "total": 83,
+        "detected": 83,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1032.3373493975903,
+        "min": 1011,
+        "max": 1052,
+        "p50": 1023,
+        "p95": 1051,
+        "p99": 1052
+      },
+      "memory": {
+        "avg": 5802996.8,
+        "peak": 7625144,
+        "delta": 2031240
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "create",
+        "details": "bulk_0_1761670216379.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_2_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_1_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_3_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_4_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_5_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_8_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_7_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_9_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_6_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_10_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_11_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_13_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_15_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_14_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_12_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_16_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_18_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_17_1761670216380.txt",
+        "timestamp": 1761670216404
+      },
+      {
+        "type": "create",
+        "details": "bulk_19_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_20_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_21_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_22_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_23_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_24_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_26_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_25_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_27_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_28_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_29_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_31_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_32_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_33_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_34_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_35_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_36_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_37_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_38_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_39_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_40_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_41_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_42_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_43_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_44_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_45_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_46_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_47_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_48_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_49_1761670216380.txt",
+        "timestamp": 1761670216411
+      },
+      {
+        "type": "create",
+        "details": "bulk_30_1761670216380.txt",
+        "timestamp": 1761670216411
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 10,
+      "verificationTime": 2000,
+      "bulkCount": 50
+    }
+  },
+  {
+    "watcher": "fs.watchFile",
+    "testPattern": "single-file-modify",
+    "scenario": "small-repo",
+    "timestamp": "2025-10-28T16:50:21.574Z",
+    "metrics": {
+      "duration": 3106,
+      "events": {
+        "total": 1,
+        "detected": 1,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1104,
+        "min": 1104,
+        "max": 1104,
+        "p50": 1104,
+        "p95": 1104,
+        "p99": 1104
+      },
+      "memory": {
+        "avg": 9429249.6,
+        "peak": 9638232,
+        "delta": 820568
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "modify",
+        "details": "dir_2_0_h2q1/dir_2_1_xE6B/file_mcCHGBKY.md",
+        "timestamp": 1761670219472
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 100,
+      "verificationTime": 2000
+    }
+  },
+  {
+    "watcher": "fs.watchFile",
+    "testPattern": "burst-creates",
+    "scenario": "medium-repo",
+    "timestamp": "2025-10-28T16:50:24.875Z",
+    "metrics": {
+      "duration": 3043,
+      "events": {
+        "total": 1,
+        "detected": 1,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1104,
+        "min": 1104,
+        "max": 1104,
+        "p50": 1104,
+        "p95": 1104,
+        "p99": 1104
+      },
+      "memory": {
+        "avg": 9244376.8,
+        "peak": 10382008,
+        "delta": 68440
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "create",
+        "details": "bulk_0_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_1_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_3_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_2_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_4_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_5_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_6_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_8_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_7_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_10_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_12_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_13_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_9_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_14_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_15_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_17_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_16_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_18_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_19_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_20_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_21_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_22_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_24_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_23_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_25_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_27_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_26_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_28_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_29_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_30_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_31_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_32_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_34_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_33_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_35_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_37_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_36_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_39_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_38_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_42_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_41_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_40_1761670222856.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_43_1761670222857.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_44_1761670222857.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_45_1761670222857.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_46_1761670222857.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_48_1761670222857.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_47_1761670222857.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_49_1761670222857.txt",
+        "timestamp": 1761670222859
+      },
+      {
+        "type": "create",
+        "details": "bulk_11_1761670222856.txt",
+        "timestamp": 1761670222859
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 10,
+      "verificationTime": 2000,
+      "bulkCount": 50
+    }
+  },
+  {
+    "watcher": "chokidar",
+    "testPattern": "single-file-modify",
+    "scenario": "small-repo",
+    "timestamp": "2025-10-28T16:50:28.051Z",
+    "metrics": {
+      "duration": 3127,
+      "events": {
+        "total": 1,
+        "detected": 1,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1027,
+        "min": 1027,
+        "max": 1027,
+        "p50": 1027,
+        "p95": 1027,
+        "p99": 1027
+      },
+      "memory": {
+        "avg": 8668609.6,
+        "peak": 10166072,
+        "delta": -1733344
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "modify",
+        "details": "dir_1_0_UzCP/dir_1_1_pI44/dir_1_2_PghL/file_KLN7VMTg.js",
+        "timestamp": 1761670225949
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 100,
+      "verificationTime": 2000
+    }
+  },
+  {
+    "watcher": "chokidar",
+    "testPattern": "burst-creates",
+    "scenario": "medium-repo",
+    "timestamp": "2025-10-28T16:50:31.445Z",
+    "metrics": {
+      "duration": 3151,
+      "events": {
+        "total": 51,
+        "detected": 51,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1139.450980392157,
+        "min": 1027,
+        "max": 1143,
+        "p50": 1142,
+        "p95": 1143,
+        "p99": 1143
+      },
+      "memory": {
+        "avg": 12048476,
+        "peak": 18637600,
+        "delta": 8471528
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "create",
+        "details": "bulk_0_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_1_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_5_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_4_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_2_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_6_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_7_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_8_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_10_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_9_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_12_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_11_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_13_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_3_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_14_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_16_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_17_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_15_1761670229422.txt",
+        "timestamp": 1761670229426
+      },
+      {
+        "type": "create",
+        "details": "bulk_18_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_19_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_20_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_21_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_23_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_24_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_22_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_25_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_26_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_27_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_28_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_29_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_31_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_30_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_34_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_32_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_33_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_35_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_37_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_39_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_38_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_36_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_40_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_41_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_42_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_43_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_44_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_46_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_45_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_47_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_48_1761670229422.txt",
+        "timestamp": 1761670229429
+      },
+      {
+        "type": "create",
+        "details": "bulk_49_1761670229422.txt",
+        "timestamp": 1761670229429
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 10,
+      "verificationTime": 2000,
+      "bulkCount": 50
+    }
+  },
+  {
+    "watcher": "go-fsnotify",
+    "testPattern": "single-file-modify",
+    "scenario": "small-repo",
+    "timestamp": "2025-10-28T16:50:34.788Z",
+    "metrics": {
+      "duration": 3205,
+      "events": {
+        "total": 2,
+        "detected": 2,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1105,
+        "min": 1105,
+        "max": 1105,
+        "p50": 1105,
+        "p95": 1105,
+        "p99": 1105
+      },
+      "memory": {
+        "avg": 15220264,
+        "peak": 15331768,
+        "delta": 319016
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "modify",
+        "details": "dir_3_0_cPlc/file_kS69CAuc.txt",
+        "timestamp": 1761670232588
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 100,
+      "verificationTime": 2000
+    }
+  },
+  {
+    "watcher": "go-fsnotify",
+    "testPattern": "burst-creates",
+    "scenario": "medium-repo",
+    "timestamp": "2025-10-28T16:50:38.223Z",
+    "metrics": {
+      "duration": 3115,
+      "events": {
+        "total": 102,
+        "detected": 102,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1104.9901960784314,
+        "min": 1104,
+        "max": 1105,
+        "p50": 1105,
+        "p95": 1105,
+        "p99": 1105
+      },
+      "memory": {
+        "avg": 19400167.2,
+        "peak": 23846096,
+        "delta": 8833344
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "create",
+        "details": "bulk_4_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_3_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_5_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_2_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_6_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_7_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_8_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_1_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_9_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_11_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_12_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_13_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_10_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_14_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_15_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_17_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_16_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_18_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_19_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_21_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_22_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_23_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_20_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_24_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_28_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_27_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_26_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_25_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_29_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_31_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_30_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_32_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_33_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_35_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_34_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_36_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_37_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_39_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_38_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_40_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_41_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_42_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_43_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_44_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_47_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_48_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_45_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_0_1761670236109.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_49_1761670236110.txt",
+        "timestamp": 1761670236112
+      },
+      {
+        "type": "create",
+        "details": "bulk_46_1761670236110.txt",
+        "timestamp": 1761670236112
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 10,
+      "verificationTime": 2000,
+      "bulkCount": 50
+    }
+  },
+  {
+    "watcher": "rust-notify",
+    "testPattern": "single-file-modify",
+    "scenario": "small-repo",
+    "timestamp": "2025-10-28T16:50:41.564Z",
+    "metrics": {
+      "duration": 3205,
+      "events": {
+        "total": 3,
+        "detected": 3,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1105,
+        "min": 1105,
+        "max": 1105,
+        "p50": 1105,
+        "p95": 1105,
+        "p99": 1105
+      },
+      "memory": {
+        "avg": 18861126.4,
+        "peak": 18969528,
+        "delta": 306568
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "modify",
+        "details": "file_ckw2bKDX.js",
+        "timestamp": 1761670239363
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 100,
+      "verificationTime": 2000
+    }
+  },
+  {
+    "watcher": "rust-notify",
+    "testPattern": "burst-creates",
+    "scenario": "medium-repo",
+    "timestamp": "2025-10-28T16:50:45.015Z",
+    "metrics": {
+      "duration": 3116,
+      "events": {
+        "total": 153,
+        "detected": 153,
+        "missed": 0,
+        "falsePositives": 0
+      },
+      "latency": {
+        "avg": 1104.5816993464052,
+        "min": 1104,
+        "max": 1105,
+        "p50": 1105,
+        "p95": 1105,
+        "p99": 1105
+      },
+      "memory": {
+        "avg": 15781412.8,
+        "peak": 18969528,
+        "delta": -5675384
+      },
+      "cpu": {
+        "user": 0,
+        "system": 0,
+        "total": 0
+      },
+      "errors": 0,
+      "accuracy": 1
+    },
+    "operationLog": [
+      {
+        "type": "create",
+        "details": "bulk_1_1761670242900.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_2_1761670242900.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_3_1761670242900.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_6_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_0_1761670242900.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_5_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_7_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_4_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_8_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_10_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_9_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_11_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_14_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_13_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_12_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_16_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_15_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_17_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_19_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_21_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_18_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_20_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_23_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_22_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_25_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_26_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_27_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_28_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_24_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_30_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_29_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_34_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_35_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_31_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_33_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_36_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_37_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_38_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_39_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_40_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_41_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_43_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_42_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_44_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_45_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_46_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_48_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_47_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_49_1761670242901.txt",
+        "timestamp": 1761670242903
+      },
+      {
+        "type": "create",
+        "details": "bulk_32_1761670242901.txt",
+        "timestamp": 1761670242903
+      }
+    ],
+    "config": {
+      "warmupTime": 1000,
+      "operationDelay": 10,
+      "verificationTime": 2000,
+      "bulkCount": 50
+    }
+  }
+]
